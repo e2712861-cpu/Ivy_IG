@@ -19,15 +19,14 @@
 
   <style>
     :root{
-      /* 粉色系主題 */
-      --bg1:#f472b6;   /* 粉紅 */
-      --bg2:#fca5a5;   /* 玫瑰粉 */
+      --bg1:#f9a8d4;   /* 淡粉 */
+      --bg2:#f472b6;   /* 亮粉 */
       --card:#2b0f1dcc;/* 半透明莓果色卡片 */
       --text:#ffeef7;
       --muted:#ffd2e3;
-      --accent:#ec4899;       /* 主要按鈕粉 */
-      --accent-press:#db2777; /* 按鈕按下 */
-      --ring:#fb7185;         /* 光暈 */
+      --accent:#ec4899;
+      --accent-press:#db2777;
+      --ring:#fb7185;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -38,7 +37,7 @@
       background:
         radial-gradient(1200px 800px at 20% -10%, #ffffff30, transparent 60%),
         radial-gradient(900px 700px at 120% 20%, #ffffff22, transparent 60%),
-        linear-gradient(135deg,var(--bg1),var(--bg2));
+        linear-gradient(135deg,var(--bg1),var(--bg2)); /* 🌸 粉色漸層 */
       display:flex;align-items:center;justify-content:center;
       padding:32px;
     }
@@ -54,22 +53,17 @@
       animation: floatUp .6s ease both;
     }
     @keyframes floatUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-    .header{
-      display:flex;gap:16px;align-items:center;margin-bottom:10px;
-    }
-    /* 預設為字母頭像；若改用照片，見文末註解 */
+    .header{display:flex;gap:16px;align-items:center;margin-bottom:10px;}
     .avatar{
       width:64px;height:64px;border-radius:50%;
-      background:linear-gradient(135deg,#fda4af,#f472b6);
+      background:linear-gradient(135deg,#fbcfe8,#f472b6);
       display:grid;place-items:center;
       color:#2b0f1d;font-weight:800;font-size:22px;
       border:2px solid #ffffffaa;
       box-shadow:0 6px 18px #00000033;
       user-select:none;
     }
-    h1{
-      font-size:22px;letter-spacing:.5px;margin:0 0 6px 0;
-    }
+    h1{font-size:22px;letter-spacing:.5px;margin:0 0 6px 0;}
     .sub{color:var(--muted);font-size:14px;margin:0}
     .badge{
       display:inline-flex;align-items:center;gap:6px;
@@ -87,26 +81,16 @@
       box-shadow:0 10px 24px #00000033;
     }
     .btn:active{transform:translateY(1px)}
-    .btn-primary{
-      color:white;background:var(--accent);
-      box-shadow:0 10px 24px #f43f5e66, 0 0 0 0 var(--ring);
-    }
+    .btn-primary{color:white;background:var(--accent);}
     .btn-primary:hover{background:var(--accent-press)}
-    .btn-ghost{
-      color:#ffe4ef;background:#ffffff24;border:1px solid #ffffff3a;
-    }
-    .notice{
-      margin-top:14px;font-size:12px;color:#ffe4efaa
-    }
+    .btn-ghost{color:#ffe4ef;background:#ffffff24;border:1px solid #ffffff3a;}
+    .notice{margin-top:14px;font-size:12px;color:#ffe4efaa}
     .footer{
       margin-top:20px;padding-top:16px;border-top:1px dashed #ffffff2a;
       display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
       color:#ffe4efcc;font-size:12px;
     }
-    .pill{
-      background:#ffffff1c;border:1px solid #ffffff36;border-radius:999px;
-      padding:6px 10px
-    }
+    .pill{background:#ffffff1c;border:1px solid #ffffff36;border-radius:999px;padding:6px 10px}
   </style>
 </head>
 <body>
