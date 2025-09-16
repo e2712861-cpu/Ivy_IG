@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ivy｜加入 LINE</title>
+
+  <!-- ✅ GA4（可共用你的 G-HWZE8GG3F4；如不同資源請替換） -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWZE8GG3F4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HWZE8GG3F4', { debug_mode: true });
+  </script>
+
+  <!-- 字體（可留可不留） -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      /* 粉色系主題 */
+      --bg1:#f472b6;   /* 粉紅 */
+      --bg2:#fca5a5;   /* 玫瑰粉 */
+      --card:#2b0f1dcc;/* 半透明莓果色卡片 */
+      --text:#ffeef7;
+      --muted:#ffd2e3;
+      --accent:#ec4899;       /* 主要按鈕粉 */
+      --accent-press:#db2777; /* 按鈕按下 */
+      --ring:#fb7185;         /* 光暈 */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Noto Sans TC',system-ui,-apple-system,Segoe UI,Roboto,Arial,'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 20% -10%, #ffffff30, transparent 60%),
+        radial-gradient(900px 700px at 120% 20%, #ffffff22, transparent 60%),
+        linear-gradient(135deg,var(--bg1),var(--bg2));
+      display:flex;align-items:center;justify-content:center;
+      padding:32px;
+    }
+    .card{
+      width:100%;
+      max-width:560px;
+      background:var(--card);
+      backdrop-filter: blur(10px);
+      border:1px solid #ffffff2a;
+      border-radius:20px;
+      box-shadow:0 20px 60px #00000040, inset 0 1px 0 #ffffff1a;
+      padding:28px;
+      animation: floatUp .6s ease both;
+    }
+    @keyframes floatUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    .header{
+      display:flex;gap:16px;align-items:center;margin-bottom:10px;
+    }
+    /* 預設為字母頭像；若改用照片，見文末註解 */
+    .avatar{
+      width:64px;height:64px;border-radius:50%;
+      background:linear-gradient(135deg,#fda4af,#f472b6);
+      display:grid;place-items:center;
+      color:#2b0f1d;font-weight:800;font-size:22px;
+      border:2px solid #ffffffaa;
+      box-shadow:0 6px 18px #00000033;
+      user-select:none;
+    }
+    h1{
+      font-size:22px;letter-spacing:.5px;margin:0 0 6px 0;
+    }
+    .sub{color:var(--muted);font-size:14px;margin:0}
+    .badge{
+      display:inline-flex;align-items:center;gap:6px;
+      font-size:12px;color:#2b0f1d;background:#ffd5e7;
+      border-radius:999px;padding:6px 10px;font-weight:700;margin-top:10px;
+    }
+    .content{margin:18px 0 24px 0;line-height:1.7;color:#ffe4ef}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;}
+    .btn{
+      appearance:none;border:0;cursor:pointer;
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:14px 18px;border-radius:12px;font-size:16px;font-weight:700;
+      text-decoration:none;
+      transition:transform .04s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow:0 10px 24px #00000033;
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn-primary{
+      color:white;background:var(--accent);
+      box-shadow:0 10px 24px #f43f5e66, 0 0 0 0 var(--ring);
+    }
+    .btn-primary:hover{background:var(--accent-press)}
+    .btn-ghost{
+      color:#ffe4ef;background:#ffffff24;border:1px solid #ffffff3a;
+    }
+    .notice{
+      margin-top:14px;font-size:12px;color:#ffe4efaa
+    }
+    .footer{
+      margin-top:20px;padding-top:16px;border-top:1px dashed #ffffff2a;
+      display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+      color:#ffe4efcc;font-size:12px;
+    }
+    .pill{
+      background:#ffffff1c;border:1px solid #ffffff36;border-radius:999px;
+      padding:6px 10px
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <div class="header">
+      <div class="avatar" aria-hidden="true">IV</div>
+      <div>
+        <h1>Ivy｜韓系女生髮型 · 設計師</h1>
+        <p class="sub">想換更顯氣質的命定髮型？加 LINE 先聊臉型與髮質，再幫你安排最適合的時段。</p>
+        <div class="badge">💗 新客限量・一對一諮詢</div>
+      </div>
+    </div>
+
+    <div class="content">
+      先加好友取得一對一諮詢（免費），提供臉型分析、髮色建議與日常打理技巧。按下方按鈕立即加入 LINE！
+    </div>
+
+    <div class="cta">
+      <!-- ✅ Ivy 的 LINE 連結 -->
+      <a id="lineBtn" class="btn btn-primary" href="https://lin.ee/r9wKaQw">加入 LINE 諮詢</a>
+
+      <!-- （選用）IG 作品集連結 -->
+      <a class="btn btn-ghost" href="https://www.instagram.com/zancut_ivy?igsh=eWM3a2R0OW1udTdr" target="_blank" rel="noopener">看作品集</a>
+    </div>
+
+    <p class="notice">點擊按鈕即表示同意以 LINE 聯繫；我們重視你的個資安全。</p>
+
+    <div class="footer">
+      <div class="pill">東區｜染卡 ZanCut Salon</div>
+      <div class="pill">平均諮詢回覆：30 分鐘內</div>
+    </div>
+  </main>
+
+  <!-- ✅ 送出事件後再跳轉（避免 GA4 收不到） -->
+  <script>
+    const lineBtn = document.getElementById('lineBtn');
+    lineBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetUrl = lineBtn.href;
+      let jumped = false;
+      const go = () => { if (!jumped) { jumped = true; window.location.href = targetUrl; } };
+
+      try {
+        gtag('event', 'click_line', {
+          designer: 'Ivy',
+          link_text: '加入 LINE 諮詢',
+          transport_type: 'beacon',
+          event_callback: go
+        });
+        setTimeout(go, 400);
+      } catch (err) {
+        go();
+      }
+    });
+  </script>
+
+</body>
+</html>
